@@ -3,7 +3,7 @@
 // Course: Advanced Atmospheric Physics by prof. Mayer
 
 /* Compile with
-gcc -Wall -o MPCCmodel.exe MPCCmodel.c ascii.o repwvl_thermal.o repwvl_solar.c -l netcdf -lm
+make
 */
 
 #include <stdio.h>
@@ -69,7 +69,7 @@ int main()
     // Allocation and initialization
     double p[NLAY];
     double dp = P0 / NLAY; // hPa
-    
+
     for (int i = 0; i < NLAY; i++)
     {
         p[i] = dp * (i + 0.5);
