@@ -1,0 +1,16 @@
+# executables
+MPCCmodel
+*.exe
+
+# object files
+*.o
+
+# build artifacts
+*.out
+
+# generated data
+output_*.dat
+
+# editor files
+*.swp
+*~
